@@ -53,9 +53,6 @@ O projeto está pronto para deploy gratuito na nuvem:
 > **Variáveis de ambiente no Web Service:** `DATABASE_URL`, `PGUSER`, `PGPASSWORD`, `PORT=8080`
 > **Variável no Static Site:** `VITE_API_URL` = URL do backend
 
-### Acesso padrão:
-- **Email:** `alex@docentia.com`
-- **Senha:** `senha_secreta_123`
 
 ---
 
