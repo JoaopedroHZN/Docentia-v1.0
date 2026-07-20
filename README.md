@@ -107,6 +107,4 @@ Desenvolvido por **João Pedro Menezes**.
 
 ---
 
-## 📄 Licença
 
-Projeto open source para fins educacionais.
