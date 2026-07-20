@@ -1,0 +1,16 @@
+services:
+  banco-docentia:
+    image: postgres:16-alpine
+    container_name: postgres_docentia
+    restart: always
+    environment:
+      POSTGRES_DB: docentia
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin_password123
+    ports:
+      - "5433:5432"
+    volumes:
+      - dados_docentia:/var/lib/postgresql/data
+
+volumes:
+  dados_docentia:

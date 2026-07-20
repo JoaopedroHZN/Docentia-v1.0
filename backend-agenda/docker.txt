@@ -1,0 +1,13 @@
+image: postgres:16-alpine: Baixa o PostgreSQL 16 em uma versão "micro" (Alpine), que consome pouquíssima memória RAM e baixa em segundos.
+
+container_name: postgres_agenda_senai: Dá um nome amigável para o container no terminal, facilitando a identificação ao rodar o comando docker ps.
+
+restart: always: Garante que o banco religue sozinho se o computador reinciar ou se o sistema cair.
+
+environment:: Cria o banco, o usuário e a senha automaticamente na primeira vez que o container roda.
+
+ports: "5432:5432": Abre a porta do Docker e conecta à porta do seu Windows, permitindo que seu código Java/Spring Boot acesse o banco.
+
+volumes:: Cria um "cofre" (dados_banco) que salva as tabelas e agendamentos diretamente no seu disco rígido. Se você desligar ou deletar o container, seus dados continuam salvos.
+
+docker compose up -d
